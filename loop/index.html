@@ -71,6 +71,35 @@ for (let i = 0; i < userAnswers.length; i++) {
   console.log(userAnswers[i]);
 }
 
+const div = document.createElement('div');
+
+
+const paragraph = document.createElement('p');
+paragraph.textContent = userName;
+div.appendChild(paragraph); 
+
+
+const ol = document.createElement('ol');
+
+
+const li1 = document.createElement('li');
+li1.textContent = userGender;
+
+const li2 = document.createElement('li');
+li2.textContent = 'Age: 21';
+
+const li3 = document.createElement('li');
+li3.textContent = userOrder;
+
+
+ol.appendChild(li1);
+ol.appendChild(li2);
+ol.appendChild(li3);
+
+
+div.appendChild(ol);
+
+document.body.appendChild(div);
 
 </script>
 
